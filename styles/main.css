@@ -1,0 +1,100 @@
+/* === Style global === */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* === Bloc principal === */
+#converter {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* === Sélecteurs de devises === */
+.currency-selects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f1f5f9;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* === Boutons === */
+#convert,
+#swap {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+#convert {
+  background: #2563eb;
+  color: white;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#convert:hover {
+  background: #1e40af;
+}
+
+#swap {
+  background: #e2e8f0;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.2rem;
+}
+
+#swap:hover {
+  background: #cbd5e1;
+}
+
+/* Animation du bouton ↔ */
+#swap.animate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* === Résultat === */
+#result {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #334155;
+}

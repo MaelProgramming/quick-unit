@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickUnit – Convertisseur universel</title>
+
+  <!-- ✅ Script principal AdSense (UNE seule fois) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6137417892699335"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+
+<body>
+  <div class="app-container">
+    <h1>QuickUnit</h1>
+    <p>Convertisseur universel rapide et léger.</p>
+
+    <!-- Zone de conversion -->
+    <div id="converter">
+      <input type="number" id="amount" placeholder="Valeur" />
+
+      <div class="currency-selects">
+        <select id="from">
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+        </select>
+
+        <!-- 🔁 Bouton pour échanger les devises -->
+        <button id="swap" title="Échanger devises">↔</button>
+
+        <select id="to">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+        </select>
+      </div>
+
+      <button id="convert">Convertir</button>
+      <p id="result"></p>
+    </div>
+
+    <!-- ✅ Bloc publicitaire Google -->
+    <div id="ad-container" style="margin-top: 1rem;">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6137417892699335"
+        data-ad-slot="1234567890"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+
+  <!-- ✅ Initialisation (une seule fois) -->
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <!-- Ton script principal -->
+  <script type="module" src="/src/app.ts"></script>
+</body>
+
+</html>
