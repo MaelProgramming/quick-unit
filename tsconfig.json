@@ -1,26 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
+    "target": "ES2022",                /* Version JS générée */
+    "module": "ESNext",                /* Modules ES pour navigateur */
+    "lib": ["ES2022", "DOM"],          /* API JS + DOM */
+    "outDir": "dist",                  /* Où mettre les fichiers compilés */
+    "rootDir": "src",                  /* Racine des fichiers TS */
+    "strict": true,                     /* Mode strict */
+    "esModuleInterop": true,            /* Compatibilité import/export */
+    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-
-    /* Linting */
-    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["src"]
 }
